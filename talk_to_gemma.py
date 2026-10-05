@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 # JON voice chat: mic → faster-whisper → Ollama → pico2wave (+ RAG “dictionary” context)
 # Features: VAD end-on-pause, echo guard, barge-in, markdown cleanup for TTS, FAISS retrieval
-
+# Created by Jeffrey Chery - AdaptAI
+# Edited and enhancements by Carlos Jofre
+#
 import io, wave, os, sys, time, json, queue, threading, subprocess, re
 import numpy as np
 import sounddevice as sd
